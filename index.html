@@ -59,9 +59,6 @@
 
     <div id="lead">
         <div id="lead-content">
-            <div class="lead-profile-image">
-                <img src="images/jomariec_1748351743_082.jpg" alt="Jomarie Cajes" class="rounded-circle img-fluid shadow" style="width: 160px; height: 160px; object-fit: cover; border: 5px solid #fff; margin-bottom: 20px;" />
-            </div>
             <h1>Jomarie Cajes</h1>
             <h2>Quality Analyst</h2>
             <a href="https://drive.google.com/uc?export=download&id=1hRhhA5Krqc2mQbL118JAyS10mXs2LKn6" class="btn-rounded-white" target="_blank">Download Resume</a>
@@ -84,6 +81,9 @@
             <div class="row">
                 <div class="col-md-4">
                     <h2 class="heading">About Me</h2>
+                    <div class="profile-image">
+                        <img id="about-profile-img" src="images/jomariec_1748351743_082.jpg" alt="Jomarie Cajes" class="rounded-circle img-fluid shadow" style="cursor:pointer;" />
+                    </div>
                 </div>
                 <div class="col-md-8">
                     <p>
@@ -130,7 +130,7 @@
             <p>Currently pursuing my degree with a focus on developing a strong foundation in IT principles and practices.</p>
         </div>
         <div class="education-block shadow">
-            <h3>University of Cebu - Pri</h3>
+            <h3>University of Cebu - Pardo Campus</h3>
             <span class="education-date">Graduated March 2018</span>
             <h4>Senior High School Graduate</h4>
             <p>Completed secondary education, preparing for higher studies in Information Technology.</p>
@@ -243,6 +243,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+
+    <!-- Modal for profile image -->
+    <div id="profileImageModal" class="modal-profile-image">
+        <span class="close-modal" id="closeProfileModal">&times;</span>
+        <img class="modal-content-profile" id="modalProfileImg">
+    </div>
 </body>
 
 </html>
